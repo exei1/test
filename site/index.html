@@ -1,9 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Hello Coursera!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 2 Solution</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Acme|Bungee+Inline|Gochi+Hand|Notable&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: #58e3616b;
+}
+
+#head {
+    font-family: 'Notable', sans-serif;
+    font-size: 3em;
+    color: saddlebrown;
+    margin: 40px;
+    text-align: center;
+}
+
+.container h4 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 0px 0px 0px 5px;
+    text-align: center;
+    width: 124px;
+    height: 45px;
+    margin: 0px 20px 0px 0px;
+    position: relative;
+    float: right;
+}
+
+.chicken h4 {
+    background: rgb(251, 255, 130);
+    color: #b84545;
+}
+
+.beef h4 {
+    background: #C14543;
+    color: white;
+}
+
+.sushi h4 {
+    background: #9032D1;
+    color: whitesmoke;
+}
+
+p {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+    background: #33c1e1ba;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 0px 20px 30px 20px;
+    padding: 50px 25px 20px 20px;
+}
+
+
+/* .container {
+    position: relative;
+    float: left;
+} */
+
+.chicken {
+    position: relative;
+    float: left;
+}
+
+.beef {
+    position: relative;
+    float: left;
+}
+
+.sushi {
+    position: relative;
+    float: left;
+}
+
+
+/*****Desktop*******/
+
+@media (min-width: 992px) {
+    .chicken,
+    .beef,
+    .sushi {
+        width: 33.33%;
+    }
+}
+
+
+/*****Tablet*******/
+
+@media (min-width: 768px) and (max-width:991px) {
+    .chicken,
+    .beef {
+        width: 50%;
+    }
+    .sushi {
+        width: 100%
+    }
+}
+
+
+/*****Mobile*******/
+
+@media (max-width: 767px) {
+    .chicken,
+    .beef,
+    .sushi {
+        width: 100%;
+    }
+}
+  </style>
+  
+  <link rel="stylesheet" href="css/styles.css" type="css/styles.css">
 </head>
+<h1 id="head">Our Menu</h1>
+<div class="container">
+  <div class="chicken">
+    <h4>Chicken</h4>
+    <p id="chicken-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa corrupti facilis nesciunt exercitationem, officiis et! Doloremque, id! Consequuntur quisquam sapiente magnam molestias quod tempore cumque aut cum officia corrupti!
+    </p>
+  </div>
+
+  <div class="beef">
+    <h4>Beef</h4>
+    <p id="beef-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa corrupti facilis nesciunt exercitationem, officiis et! Doloremque, id! Consequuntur quisquam sapiente magnam molestias quod tempore cumque aut cum officia corrupti!
+    </p>
+  </div>
+
+  <div class="sushi">
+    <h4>Sushi</h4>
+    <p id="sushi-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa corrupti facilis nesciunt exercitationem, officiis et! Doloremque, id! Consequuntur quisquam sapiente magnam molestias quod tempore cumque aut cum officia corrupti!
+    </p>
+  </div>
+</div>
+
+
 <body>
-<h1>Hello Coursera!</h1>
+
 </body>
+
 </html>
